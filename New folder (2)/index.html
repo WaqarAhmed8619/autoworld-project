@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoWorld - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">MyLogo</div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dealers.html">Locate Dealers</a></li>
+                    <li><a href="catalogue.html">Car Catalogue</a>
+                        <ul class="dropdown">
+                            <li><a href="new-arrivals.html">New Arrivals</a></li>
+                            <li><a href="best-sellers.html">Best Sellers</a></li>
+                            <li><a href="#">Sale Items</a></li>
+                        </ul></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="warranty.html">Warranty Schemes</a></li>
+                    <li><a href="finance.html">Finance Options</a></li>
+                    <li><a href="comparison.html">Car Comparison</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-input">
+                <!-- <button class="search-button"></button> -->
+            </div>
+            <div class="hamburger" id="hamburger">
+                ☰
+            </div>
+        </div>
+    </header>
+    <script>
+    const hamburger = document.getElementById("hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("nav-active");
+        });
+        </script>
+    
+    <div class="check" style="width: 100%; height: 600px;">
+        <div class="btn1">
+        <a href="#services" class="btn2">Explore Our Services</a>
+    </div>
+    </div>
+<section>
+    
+
+    <section class="featured-services">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <img src="https://d26qplkpp6t30l.cloudfront.net/wp-content/uploads/2019/01/22092032/oil-change-explained.jpg" alt="Oil Change">
+            <h3>Oil Change</h3>
+            <p>Quick and reliable oil change services to keep your engine running smoothly.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://media.licdn.com/dms/image/D4E12AQH-Lc09oMoWnw/article-cover_image-shrink_720_1280/0/1692283423048?e=2147483647&v=beta&t=U-fHW_aLmz2vmFXmE2vecRo8E4TCKR8Lmry8EntLZTE" alt="Tire Rotation">
+            <h3>Tire Rotation</h3>
+            <p>Extend the life of your tires with our professional tire rotation services.</p>
+        </div>
+        <div class="service-card">
+            <img src="https://cdn.prod.website-files.com/61663b935673812397b41e82/62304a03467a27a2785aa504_04-01%20Brake%20Service.webp" alt="Brake Service">
+            <h3>Brake Service</h3>
+            <p>Ensure your safety with our comprehensive brake service and inspections.</p>
+        </div>
+    </section>
+    <section class="featured-cars">
+        <h2>Featured Cars</h2>
+        <div class="car-list" >
+            <div class="car-item" style="width: 250px; height: 300px;">
+                <img src="https://www.motortrend.com/files/669eb77713c42700086e12c7/2025hondacivicsisedan3.jpg?w=768&width=768&q=75&format=webp" alt="Honda Civic">
+                <h3>Honda Civic</h3>
+                <p>Starting at $22,000</p>
+            </div>
+            <div class="car-item" style="width: 250px; height: 300px;">
+                <img src="https://www.suzukimalaysia.com/images/swiftsport-silver/performance-bx-1-sm.jpg" alt="Suzuki Swift">
+                <h3>Suzuki Swift</h3>
+                <p>Starting at $18,500</p>
+            </div>
+            <div class="car-item" style="width: 250px; height: 300px;">
+                <img src="https://media.ford.com/content/fordmedia/fna/us/en/news/2016/02/03/2017-ford-f-150-raptor-prepares-for-grueling-off-road-racing-series/jcr:content/image.img.881.495.jpg/1504714780515.jpg" alt="Ford Raptor">
+                <h3>Ford Raptor</h3>
+                <p>Starting at $20,000</p>
+            </div>
+            <div class="car-item" style="width: 250px; height: 300px;">
+                <img src="https://www.leadcartoyotawausau.com/static/brand-toyota/vehicle/2024/Toyota/Corolla-Hybrid/MRP/01.jpg" alt="Toyata Corolla">
+                <h3>Toyata Corolla</h3>
+                <p>Starting at $20,000</p>
+            </div>
+            <div class="car-item" style="width: 250px; height: 300px;">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/2018-bmw-i8-roadster-120-1524840798.jpg?crop=0.724xw:0.893xh;0.237xw,0.0759xh&resize=768:*" alt="BMW i8">
+                <h3>BMW i8</h3>
+                <p>Starting at $20,000</p>
+            </div>
+            <div class="car-item" style="width: 250px; height: 300px;">
+                <img src="https://s3-prod.autonews.com/s3fs-public/mercedes_amg_gt_63_pro-MAIN_i.jpg" alt="Mercedes Benz">
+                <h3>Mercedes Benz</h3>
+                <p>Starting at $20,000</p>
+            </div>
+            <div class="car-item" style="width: 250px; height: 300px;">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/2025-audi-q8-122-66b22ccb588f2.jpg?crop=0.655xw:0.553xh;0.157xw,0.257xh&resize=2048:*" alt="Audi Q8">
+                <h3>Audi Q8</h3>
+                <p>Starting at $20,000</p>
+            </div>
+            <div class="car-item" style="width: 250px; height: 300px;">
+                <img src="https://img.sm360.ca/ir/w640h480/images/article/wheaton-chevrolet/99120//chevrolet-corvette_z06-2023-1600-0116494300917571666010939957.jpeg" alt="Chevrolet Corvette">
+                <h3>Chevrolet Corvette</h3>
+                <p>Starting at $20,000</p>
+            </div>
+            <div class="car-item" style="width: 250px; height: 300px;">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/2025-kia-sportage-102-66a9293d9649c.jpg?crop=0.779xw:0.656xh;0.112xw,0.202xh&resize=2048:*" alt="KIA Sportage">
+                <h3>KIA Sportage</h3>
+                <p>Starting at $20,000</p>
+            </div>
+            <div class="car-item" style="width: 250px; height: 300px;">
+                <img src="https://www.motortrend.com/uploads/sites/5/2020/07/2020-Lexus-LX-570-15.jpg?w=768&width=768&q=75&format=webp" alt="Lexus SUVs">
+                <h3>Lexus SUVs</h3>
+                <p>Starting at $20,000</p>
+            </div>
+            <div class="car-item" style="width: 250px; height: 300px;">
+                <img src="https://www.thedrive.com/wp-content/uploads/images-by-url-td/content/2021/06/20210602-2021-GMC-Sierra-1500-Denali-Review-Hero.jpg" alt="GMC Denali">
+                <h3>GMC Denali Truck</h3>
+                <p>Starting at $20,000</p>
+            </div>
+            <div class="car-item" style="width: 250px; height: 300px;">
+                <img src="https://www.motortrend.com/uploads/sites/5/2021/06/Rolls-Royce_Wraith_Dawn_Landspeed_Edition_23.jpg" alt="Rolls Royce">
+                <h3>Rolls Royce</h3>
+                <p>Starting at $20,000</p>
+            </div>
+            <div class="car-item" style="width: 250px; height: 300px;">
+                <img src="https://www.motortrend.com/uploads/sites/5/2021/06/Rolls-Royce_Wraith_Dawn_Landspeed_Edition_23.jpg" alt="Rolls Royce">
+                <h3>Rolls Royce</h3>
+                <p>Starting at $20,000</p>
+            </div>
+            <div class="car-item" style="width: 250px; height: 300px;">
+                <img src="https://www.motortrend.com/uploads/sites/5/2021/06/Rolls-Royce_Wraith_Dawn_Landspeed_Edition_23.jpg" alt="Rolls Royce">
+                <h3>Rolls Royce</h3>
+                <p>Starting at $20,000</p>
+            </div>
+            <!-- <div class="car-item" style="width: 250px; height: 300px;"></div>
+                <img src="https://www.motortrend.com/uploads/sites/5/2021/06/Rolls-Royce_Wraith_Dawn_Landspeed_Edition_23.jpg" alt="Rolls Royce">
+                <h3>Rolls Royce</h3>
+                <p>Starting at $20,000</p>
+            </div> -->
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <blockquote>
+            <img src="https://demo.solwininfotech.com/wordpress/justica/wp-content/uploads/2016/07/Attorneys-5.png" alt="Customer 1" class="testimonial-image">
+            <p>"AutoWorld provided exceptional service. I will definitely return!"</p>
+            <footer> John Doe</footer>
+        </blockquote>
+        <blockquote>
+            <img src="https://s.yimg.com/ny/api/res/1.2/o2M4X8Esi_OPLETyuHBTrg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://media.zenfs.com/en/bang_showbiz_nz_240/ce6786eb75482dd10c98db8cfc68b7f8" alt="Customer 2" class="testimonial-image">
+            <p>"The warranty options were fantastic and gave me peace of mind."</p>
+            <footer> Jane Smith</footer>
+        </blockquote>
+    </section>
+    
+    <section class="latest-news">
+        <h2>Latest News</h2>
+        <article>
+            <img src="https://www.autostore.pk/wp-content/uploads/2024/02/Top-5-Car-Maintenance-Tips-min.jpg" alt="Car Maintenance Tips" class="news-image">
+            <h3><a href="#">5 Tips for Maintaining Your Car</a></h3>
+            <p>Keep your vehicle in top shape with these maintenance tips...</p>
+        </article>
+        <article>
+            <img src="https://www.aircon.panasonic.eu/uploads/GB/Warranty.jpg" alt="New Warranty Schemes" class="news-image">
+            <h3><a href="#">Introducing Our New Warranty Schemes</a></h3>
+            <p>Explore the latest warranty options available for your vehicle...</p>
+        </article>
+    </section>
+    
+    <section class="cta">
+        <h2>Ready to Service Your Vehicle?</h2>
+        <a href="#contact" class="btn">Schedule an Appointment</a>
+    </section>
+    
+</section>
+ 
+                        
+
+    <footer>
+        <div class="footer-content">
+            <!-- <p>© 2024 AutoWorld.com. All rights reserved.</p>
+            <p>Your one-stop destination for all automotive needs.</p> -->
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#dealer-locator">Dealer Locator</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:info@autoworld.com">info@autoworld.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Auto Lane, Car City, ST 12345</p>
+            </div>
+    
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                    <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2024 AutoWorld. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

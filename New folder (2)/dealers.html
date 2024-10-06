@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Locate Dealers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">MyLogo</div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dealers.html">Locate Dealers</a></li>
+                    <li><a href="catalogue.html">Car Catalogue</a>
+                        <ul class="dropdown">
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Best Sellers</a></li>
+                            <li><a href="#">Sale Items</a></li>
+                        </ul></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="warranty.html">Warranty Schemes</a></li>
+                    <li><a href="finance.html">Finance Options</a></li>
+                    <li><a href="comparison.html">Car Comparison</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-input">
+                <!-- <button class="search-button"></button> -->
+            </div>
+            <div class="hamburger" id="hamburger">
+                ☰
+            </div>
+        </div>
+    </header>
+    
+    <section class="dealer-section">
+        <h1>Locate Dealers</h1>
+        <form id="dealer-form">
+            <label for="brand">Choose a car brand:</label>
+            <select id="brand" name="brand">
+                <option value="honda">Honda</option>
+                <option value="suzuki">Suzuki</option>
+                <option value="ford">Ford</option>
+                <option value="toyota">Toyota</option>
+                <option value="kia">KIA</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="lexus">Lexus</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="rollsRoyce">Rolls Royce</option>
+                <option value="gmc">GMC</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <!-- Add more brands as needed -->
+            </select>
+            <button type="submit">Find Dealers</button>
+        </form>
+
+        <div id="dealer-list">
+            <!-- Dealer list will be populated here based on selection -->
+            <div class="featured-dealers">
+                <h2>Featured Dealers</h2>
+                <div class="dealer-card">
+                    <img src="https://moneyguy.com/wp-content/uploads/2019/12/car-dealer-1.jpg" alt="Dealer 1" style="width: 400px; height: 300px; aspect-ratio: 3/2;">
+                    <h3>Dealer Name 1</h3>
+                    <p>Location: City, State</p>
+                    <p>Contact: (123) 456-7890</p>
+                </div>
+                <div class="dealer-card">
+                    <img src="https://images.dealer.com/graphics/Dealership/Customers_and_Keys/keys-001.jpg?impolicy=downsize_bkpt&w=410" alt="Dealer 2" style="width: 400px; height: 300px; aspect-ratio: 3/2;">
+                    <h3>Dealer Name 2</h3>
+                    <p>Location: City, State</p>
+                    <p>Contact: (098) 765-4321</p>
+                </div>
+                <!-- Add more dealer cards as needed -->
+            </div>            
+        </div>
+
+        <div class="info-section1">
+            <h2>Why Choose Us?</h2>
+            <p>We connect you with trusted dealers in your area who provide the best service and prices for your favorite car brands.</p>
+            <ul>
+                <li>Wide network of certified dealers</li>
+                <li>Exclusive offers and discounts</li>
+                <li>Customer service support</li>
+                <li>Convenient location search</li>
+            </ul>
+            <img src="https://www.memberonefcu.com/uploads/Pages/_960xAUTO_fit_center-center_none/AdobeStock_212736690.jpeg?v=1705351968" alt="Dealer Network" class="info-image">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <!-- <p>© 2024 AutoWorld.com. All rights reserved.</p>
+            <p>Your one-stop destination for all automotive needs.</p> -->
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#dealer-locator">Dealer Locator</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:info@autoworld.com">info@autoworld.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Auto Lane, Car City, ST 12345</p>
+            </div>
+    
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                    <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2024 AutoWorld. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
+

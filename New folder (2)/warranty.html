@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Warranty Schemes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">MyLogo</div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dealers.html">Locate Dealers</a></li>
+                    <li><a href="catalogue.html">Car Catalogue</a>
+                        <ul class="dropdown">
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Best Sellers</a></li>
+                            <li><a href="#">Sale Items</a></li>
+                        </ul></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="warranty.html">Warranty Schemes</a></li>
+                    <li><a href="finance.html">Finance Options</a></li>
+                    <li><a href="comparison.html">Car Comparison</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-input">
+                <!-- <button class="search-button"></button> -->
+            </div>
+            <div class="hamburger" id="hamburger">
+                ☰
+            </div>
+        </div>
+    </header>
+    <section class="warranty-info">
+        <h2>Warranty Schemes</h2>
+        <p>At AutoWorld, we offer comprehensive warranty schemes for various car brands. Below are the details for our current warranty offerings:</p>
+        <input type="text" id="searchInput" placeholder="Search for a car brand..." onkeyup="filterBrands()">
+        
+        
+        <div class="warranty-scheme">
+            <img src="Honda-Logo-Digital-Wallpapers.png" alt="Honda" onclick="toggleDetails(this)" class="brand-image">
+            
+          <div class="details"> 
+            <h3>Honda</h3>
+            <p><strong>Basic Warranty:</strong> 3 years or 36,000 miles, whichever comes first.</p>
+            <p><strong>Powertrain Warranty:</strong> 5 years or 60,000 miles.</p>
+            <p><strong>Corrosion Warranty:</strong> 5 years with no mileage limit.</p>
+            <p><strong>Extended Warranty Options:</strong> Available up to 8 years or 120,000 miles.</p>
+          </div> 
+        </div>
+        
+        <div class="warranty-scheme">
+            <img src="https://wallpapers.com/images/hd/suzuki-logo-brand-identity-o1lygtw6bnhg4hvb-2.jpg" alt="Suzuki" onclick="toggleDetails(this)" class="brand-image">
+            <div class="details">
+            <h3>Suzuki</h3>
+            <p><strong>Basic Warranty:</strong> 3 years or 36,000 miles.</p>
+            <p><strong>Powertrain Warranty:</strong> 5 years or 100,000 miles.</p>
+            <p><strong>Corrosion Warranty:</strong> 7 years with no mileage limit.</p>
+            <p><strong>Extended Warranty Options:</strong> Available up to 10 years or 150,000 miles.</p>
+        </div>
+        </div>
+
+        <div class="warranty-scheme">
+            <img src="https://interbrand.com/wp-content/uploads/2020/07/ford-square.png" alt="Ford" onclick="toggleDetails(this)" class="brand-image">
+            
+            <div class="details">
+            <h3>Ford</h3>    
+            <p><strong>Basic Warranty:</strong> 3 years or 36,000 miles.</p>
+            <p><strong>Powertrain Warranty:</strong> 5 years or 60,000 miles.</p>
+            <p><strong>Corrosion Warranty:</strong> 5 years with unlimited mileage.</p>
+            <p><strong>Extended Warranty Options:</strong> Available up to 8 years or 100,000 miles.</p>
+        </div>
+        </div>
+        
+        <div class="warranty-scheme">
+            <img src="https://sethsautorepair.com/wp-content/uploads/2018/05/toyota-logo-1989-2560x1440.png?w=640" alt="Toyota" onclick="toggleDetails(this)" class="brand-image">
+            <div class="details">
+            <h3>Toyota</h3>
+            <p><strong>Basic Warranty:</strong> 3 years or 36,000 miles.</p>
+            <p><strong>Powertrain Warranty:</strong> 5 years or 60,000 miles.</p>
+            <p><strong>Corrosion Warranty:</strong> 5 years with no mileage limit.</p>
+            <p><strong>Extended Warranty Options:</strong> Available up to 7 years or 100,000 miles.</p>
+        </div>
+        </div>
+
+        <div class="warranty-scheme">
+            <img src="https://cka-dash.s3.amazonaws.com/009-1118-WCH1010/jdpoweraward_main.jpg" alt="Chevrolet" onclick="toggleDetails(this)" class="brand-image">
+            <div class="details">
+            <h3>Chevrolet</h3>
+            <p><strong>Basic Warranty:</strong> 3 years or 36,000 miles.</p>
+            <p><strong>Powertrain Warranty:</strong> 5 years or 60,000 miles.</p>
+            <p><strong>Corrosion Warranty:</strong> 6 years with no mileage limit.</p>
+            <p><strong>Extended Warranty Options:</strong> Available up to 8 years or 100,000 miles.</p>
+        </div>
+        </div>
+
+        <div class="warranty-scheme">
+            <img src="https://brandstruck.co/wp-content/uploads/2019/03/Nissan-brand-strategy.png" alt="Nissan" onclick="toggleDetails(this)" class="brand-image">
+            <div class="details">
+            <h3>Nissan</h3>
+            <p><strong>Basic Warranty:</strong> 3 years or 36,000 miles.</p>
+            <p><strong>Powertrain Warranty:</strong> 5 years or 60,000 miles.</p>
+            <p><strong>Corrosion Warranty:</strong> 5 years with no mileage limit.</p>
+            <p><strong>Extended Warranty Options:</strong> Available up to 7 years or 100,000 miles.</p>
+        </div>
+        </div>
+
+        <div class="warranty-scheme">
+            <img src="https://1000logos.net/wp-content/uploads/2018/02/BMW-Logo-1997.png" alt="BMW" onclick="toggleDetails(this)" class="brand-image">            
+            <div class="details">
+            <h3>BMW</h3>
+            <p><strong>Basic Warranty:</strong> 4 years or 50,000 miles.</p>
+            <p><strong>Powertrain Warranty:</strong> 4 years or 50,000 miles.</p>
+            <p><strong>Corrosion Warranty:</strong> 12 years with no mileage limit.</p>
+            <p><strong>Extended Warranty Options:</strong> Available up to 7 years or 100,000 miles.</p>
+        </div>
+        </div>
+        
+        <div class="warranty-scheme">
+            <img src="https://logolook.net/wp-content/uploads/2022/05/Mercedes-Benz-Logo.png" onclick="toggleDetails(this)" alt="Mercedes-Benz" class=" n">
+            <div class="details">
+            <h3>Mercedes-Benz</h3>
+            <p><strong>Basic Warranty:</strong> 4 years or 50,000 miles.</p>
+            <p><strong>Powertrain Warranty:</strong> 4 years or 50,000 miles.</p>
+            <p><strong>Corrosion Warranty:</strong> 4 years with unlimited mileage.</p>
+            <p><strong>Extended Warranty Options:</strong> Available up to 7 years or 100,000 miles.</p>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <!-- <p>© 2024 AutoWorld.com. All rights reserved.</p>
+            <p>Your one-stop destination for all automotive needs.</p> -->
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#dealer-locator">Dealer Locator</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:info@autoworld.com">info@autoworld.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Auto Lane, Car City, ST 12345</p>
+            </div>
+    
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                    <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2024 AutoWorld. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

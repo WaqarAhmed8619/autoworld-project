@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Catalogue | AutoWorld</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+   
+    
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">MyLogo</div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dealers.html">Locate Dealers</a></li>
+                    <li><a href="catalogue.html">Car Catalogue</a>
+                        <ul class="dropdown">
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Best Sellers</a></li>
+                            <li><a href="#">Sale Items</a></li>
+                        </ul></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="warranty.html">Warranty Schemes</a></li>
+                    <li><a href="finance.html">Finance Options</a></li>
+                    <li><a href="comparison.html">Car Comparison</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-input">
+                <!-- <button class="search-button"></button> -->
+            </div>
+            <div class="hamburger" id="hamburger">
+                ☰
+            </div>
+        </div>
+    </header>
+
+    <!-- Car Filter Section -->
+    <section class="car-filter">
+        <h1>Car Catalogue</h1>
+        <label for="priceRange">Filter by Price:</label>
+        <select id="priceRange">
+            <option value="all">All</option>
+            <option value="20000">Up to $20,000</option>
+            <option value="40000">Up to $40,000</option>
+            <option value="60000">Up to $60,000</option>
+        </select>
+    </section>
+
+    <!-- Car Listing Section -->
+    <section class="car-listing">
+        <div class="car-list2">
+            <div class="car-item">
+                <img src="https://media.ed.edmunds-media.com/honda/cr-v/2025/oem/2025_honda_cr-v_4dr-suv_ex-l_fq_oem_1_1280.jpg" alt="Honda CR-V 2025">
+                <h2>Honda CR-V 2025</h2>
+                <p>Price: $30,000</p>
+                <a href="car-details.html?id=1" class="details-button">View Details</a>
+                <button class="compare-button" onclick="addToCompare('Honda CR-V 2025', '$30,000', 'https://media.ed.edmunds-media.com/honda/cr-v/2025/oem/2025_honda_cr-v_4dr-suv_ex-l_fq_oem_1_1280.jpg')">Add to Compare</button>
+            </div>
+            
+            <div class="car-item">
+                <img src="https://media.ed.edmunds-media.com/toyota/corolla-hybrid/2023/oem/2023_toyota_corolla-hybrid_sedan_se_fq_oem_1_600.jpg" alt="Toyota Corolla 2025">
+                <h2>Toyota Corolla 2025</h2>
+                <p>Price: $25,000</p>
+                <a href="car-details.html?id=2" class="details-button">View Details</a>
+                <button class="compare-button" onclick="addToCompare('Toyota Corolla 2025', '$25,000', 'https://media.ed.edmunds-media.com/toyota/corolla-hybrid/2023/oem/2023_toyota_corolla-hybrid_sedan_se_fq_oem_1_600.jpg')">Add to Compare</button>
+            </div>
+            
+            <div class="car-item">
+                <img src="https://www.motortrend.com/files/66a940185d80b100081c2bfa/2025audia6e-tronsportback1.png?w=768&width=768&q=75&format=webp" alt="Audi A6 2025">
+                <h2>Audi A6 2025</h2>
+                <p>Price: $50,000</p>
+                <a href="car-details.html?id=3" class="details-button">View Details</a>
+                <button class="compare-button" onclick="addToCompare('Audi A6 2025', '$50,000', 'https://www.motortrend.com/files/66a940185d80b100081c2bfa/2025audia6e-tronsportback1.png?w=768&width=768&q=75&format=webp')">Add to Compare</button>
+            </div>
+            
+            <div class="car-item">
+                <img src="https://edgecast-img.yahoo.net/mysterio/api/20C5BF142E43CA5EA4F30178868542FCA0E51F63C1DFBB55F339DFA0C5FDBD6D/autoblog/resizefill_w768_h432;quality_85;format_webp;cc_31536000;/https://s.aolcdn.com/commerce/autodata/images/USD40MBC681A01300.jpg" alt="Mercedes Benz E-Class 2025">
+                <h2>Mercedes Benz E-Class 2025</h2>
+                <p>Price: $70,000</p>
+                <a href="car-details.html?id=4" class="details-button">View Details</a>
+                <button class="compare-button" onclick="addToCompare('Mercedes Benz E-Class 2025', '$70,000', 'https://edgecast-img.yahoo.net/mysterio/api/20C5BF142E43CA5EA4F30178868542FCA0E51F63C1DFBB55F339DFA0C5FDBD6D/autoblog/resizefill_w768_h432;quality_85;format_webp;cc_31536000;/https://s.aolcdn.com/commerce/autodata/images/USD40MBC681A01300.jpg')">Add to Compare</button>
+            </div>
+            
+            <div class="car-item">
+                <img src="https://www.motortrend.com/uploads/2024/03/20-2025-BMW-i5-eDrive40-front-view.jpg" alt="BMW 5 Series 2025">
+                <h2>BMW 5 Series 2025</h2>
+                <p>Price: $65,000</p>
+                <a href="car-details.html?id=5" class="details-button">View Details</a>
+                <button class="compare-button" onclick="addToCompare('BMW 5 Series 2025', '$65,000', 'https://www.motortrend.com/uploads/2024/03/20-2025-BMW-i5-eDrive40-front-view.jpg')">Add to Compare</button>
+            </div>
+            
+            <div class="car-item">
+                <img src="https://i.ytimg.com/vi/eFykzvCZg04/sddefault.jpg" alt="Rolls Royce Phantom 2025">
+                <h2>Rolls Royce Phantom 2025</h2>
+                <p>Price: $400,000</p>
+                <a href="car-details.html?id=6" class="details-button">View Details</a>
+                <button class="compare-button" onclick="addToCompare('Rolls Royce Phantom 2025', '$400,000', 'https://i.ytimg.com/vi/eFykzvCZg04/sddefault.jpg')">Add to Compare</button>
+            </div>
+            
+            <div class="car-item">
+                <img src="https://autogear.pt/wp-content/uploads/449660788_488090280399139_6458192188058115418_n-1080x570.jpeg" alt="Ford Mustang 2025">
+                <h2>Ford Mustang 2025</h2>
+                <p>Price: $55,000</p>
+                <a href="car-details.html?id=7" class="details-button">View Details</a>
+                <button class="compare-button" onclick="addToCompare('Ford Mustang 2025', '$55,000', 'https://autogear.pt/wp-content/uploads/449660788_488090280399139_6458192188058115418_n-1080x570.jpeg')">Add to Compare</button>
+            </div>
+            
+            <div class="car-item">
+                <img src="https://cdcssl.ibsrv.net/cimg/www.carsdirect.com/1068x712_85/683/2025-gmc-sierra-ev-at4-150-723683.jpg" alt="GMC Denali 2025">
+                <h2>GMC Denali 2025</h2>
+                <p>Price: $80,000</p>
+                <a href="car-details.html?id=8" class="details-button">View Details</a>
+                <button class="compare-button" onclick="addToCompare('GMC Denali 2025', '$80,000', 'https://cdcssl.ibsrv.net/cimg/www.carsdirect.com/1068x712_85/683/2025-gmc-sierra-ev-at4-150-723683.jpg')">Add to Compare</button>
+            </div>
+            
+            <div class="car-item">
+                <img src="https://cdn.motor1.com/images/mgl/XBYGel/s1/novo-kia-sportage-facelift---projecao.jpg" alt="Kia Sportage 2025">
+                <h2>Kia Sportage 2025</h2>
+                <p>Price: $35,000</p>
+                <a href="car-details.html?id=9" class="details-button">View Details</a>
+                <button class="compare-button" onclick="addToCompare('Kia Sportage 2025', '$35,000', 'https://cdn.motor1.com/images/mgl/XBYGel/s1/novo-kia-sportage-facelift---projecao.jpg')">Add to Compare</button>
+            </div>
+            
+            <div class="car-item">
+                <img src="https://www.chasingcars.com.au/wp-content/uploads/2023/03/ID-1-3.jpg" alt="Suzuki Swift 2025">
+                <h2>Suzuki Swift 2025</h2>
+                <p>Price: $20,000</p>
+                <a href="car-details.html?id=10" class="details-button">View Details</a>
+                <button class="compare-button" onclick="addToCompare('Suzuki Swift 2025', '$20,000', 'https://www.chasingcars.com.au/wp-content/uploads/2023/03/ID-1-3.jpg')">Add to Compare</button>
+            </div>
+            
+            
+            <!-- Add more car items here -->
+        </div>
+    </section>
+    
+    
+ 
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- <p>© 2024 AutoWorld.com. All rights reserved.</p>
+            <p>Your one-stop destination for all automotive needs.</p> -->
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#dealer-locator">Dealer Locator</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:info@autoworld.com">info@autoworld.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Auto Lane, Car City, ST 12345</p>
+            </div>
+    
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                    <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2024 AutoWorld. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
